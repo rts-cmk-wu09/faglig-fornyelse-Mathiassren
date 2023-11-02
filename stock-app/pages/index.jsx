@@ -18,7 +18,7 @@ export default function Home() {
     try {
       setRes(null);
       setError(null);
-      setBtnText("Loading...");
+      setBtnText("Loading Stonks...");
       const res = await axios.get(`/api/info`, {
         params: { stock },
       });
@@ -47,7 +47,7 @@ export default function Home() {
             <a href="#">About</a>
           </li>
           <li className="hover:text-oceanBlueDark">
-            <a href="#">New</a>
+            <a href="/news/page">News</a>
           </li>
         </ul>
       </nav>

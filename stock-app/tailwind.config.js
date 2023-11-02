@@ -15,7 +15,7 @@ module.exports = {
       secondary: "#415a77",
       danger: "#778da9",
       lightGrey: "#e0e1dd",
-      price: "#6a994e", //used for valuta &
+      price: "#6a994e", //used for currency
       priceUp: "#70e000",
       priceDown: "#bf0603",
 
