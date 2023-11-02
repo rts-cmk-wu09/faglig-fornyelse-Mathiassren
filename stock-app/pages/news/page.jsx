@@ -14,8 +14,7 @@ const News = () => {
               symbol: "AAPL,MSFT",
             },
             headers: {
-              "X-RapidAPI-Key":
-                "900f424182msh425d1399576f50cp11ca87jsn30a98881d57d",
+              "X-RapidAPI-Key": "",
               "X-RapidAPI-Host": "mboum-finance.p.rapidapi.com",
             },
           }
