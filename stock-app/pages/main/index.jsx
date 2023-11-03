@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 export default function Home() {
-  const [stock, setStock] = useState("Fb");
+  const [stock, setStock] = useState("");
   const [btnText, setBtnText] = useState("Search");
   const [res, setRes] = useState(null);
   const [error, setError] = useState(null);
@@ -105,6 +105,9 @@ export default function Home() {
             </p>
           </div>
         )}
+      </div>
+      <div className="text-primary border-lightGrey border px-4 py-4 mt-36">
+        <a href="/stocks/list">See a variety of stocks here</a>
       </div>
       <div className="flex flex-col mt-10 justify-end h-36 md:h-24">
         <p className="block mb-10 text-center text-secondary text-xs">
