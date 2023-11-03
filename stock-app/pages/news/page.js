@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const News = () => {
-  const [newsData, setNewsData] = useState(undefined);
-
+  const [newsData, setNewsData] = useState();
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -14,8 +13,7 @@ const News = () => {
               symbol: "AAPL,MSFT",
             },
             headers: {
-              "X-RapidAPI-Key":
-                "900f424182msh425d1399576f50cp11ca87jsn30a98881d57d",
+              "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RAPIDAPI_KEY,
               "X-RapidAPI-Host": "mboum-finance.p.rapidapi.com",
             },
           }
