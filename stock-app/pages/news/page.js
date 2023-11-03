@@ -28,7 +28,6 @@ const News = () => {
     fetchData();
   }, []);
 
-  // Function to select a subset of articles
   const getSelectedArticles = (count) => {
     return newsData && newsData.body.slice(0, count);
   };
