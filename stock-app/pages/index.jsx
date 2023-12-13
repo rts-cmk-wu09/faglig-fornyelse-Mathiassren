@@ -7,11 +7,6 @@ export default function Home() {
   const [res, setRes] = useState(null);
   const [error, setError] = useState(null);
 
-  /*Fetch stock api
-   *
-   *
-   *
-   * */
   const fetchStockInformation = async (e) => {
     e.preventDefault();
 
@@ -47,7 +42,7 @@ export default function Home() {
             <a href="#">About</a>
           </li>
           <li className="hover:text-oceanBlueDark">
-            <a href="/news/page">News</a>
+            <a href="/news/newspage">News</a>
           </li>
         </ul>
       </nav>
@@ -115,7 +110,7 @@ export default function Home() {
           </div>
         )}
         {error && (
-          <div className="flex flex-col mt-16 w-3/6 h-4/5 md:flex-col md:w-4/6 md:h-full md:mb-12 md:w-4/5">
+          <div className="flex flex-col mt-16 w-3/6 h-4/5 md:flex-col md:h-full md:mb-12 md:w-4/5">
             <p className="mb-12 border border-secondary text-primary font-raleway px-4 py-8 tracking-wide leading-8">
               {error.toString()}
             </p>

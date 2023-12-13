@@ -8,13 +8,13 @@ const News = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://mboum-finance.p.rapidapi.com/ne/news/",
+          "https://mboum-finance.p.rapidapi.com/v1/markets/news",
           {
             params: {
               symbol: "AAPL,MSFT",
             },
             headers: {
-              "X-RapidAPI-Key": "",
+              "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RAPIDAPI_KEY,
               "X-RapidAPI-Host": "mboum-finance.p.rapidapi.com",
             },
           }
